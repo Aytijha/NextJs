@@ -13,7 +13,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Script src='sc.js' strategy='lazyOnload'></Script>
+      {/* <Script src='sc.js' strategy='lazyOnload'></Script> */}
+
+      <nav className={styles.mainnav}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Blog</li>
+        </ul>
+      </nav>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -24,34 +33,20 @@ export default function Home() {
           A blog for coders by a coder
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="blogs">
+          <h2>Popular Blogs</h2>
+          <div className="blogItem">
+            <h3>How to learn JavaScript in 2022</h3>
+            JavaScript is a language used to design logic for the web
+          </div>
+          <div className="blogItem">
+            <h3>How to learn JavaScript in 2022</h3>
+            JavaScript is a language used to design logic for the web
+          </div>
+          <div className="blogItem">
+            <h3>How to learn JavaScript in 2022</h3>
+            JavaScript is a language used to design logic for the web
+          </div>
         </div>
       </main>
 
